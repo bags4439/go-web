@@ -1,0 +1,102 @@
+# .cursorrules for go-web (AutoImport GH Landing Page)
+
+## Project
+Next.js 14 App Router, TypeScript strict, CSS Modules.
+Marketing landing page for AutoImport GH - Ghana vehicle import platform.
+
+## Architecture
+src/
+  app/            Next.js App Router - layout.tsx, page.tsx, globals.css
+  components/
+    layout/       Nav, Footer
+    sections/     One file per page section
+    ui/           Button, Badge, SectionLabel primitives
+  lib/
+    content.ts    ALL copy, stats, links - single source of truth
+    constants.ts  Brand colors, breakpoints
+
+## Rules
+- ALL text lives in lib/content.ts - never hardcoded in components
+- CSS Modules only - no Tailwind, no inline styles except dynamic values
+- CSS custom properties from globals.css - no hardcoded color values in modules
+- DM Sans + Syne via next/font/google
+- Every component is a named export
+- Props interfaces defined above components
+- Section components take no props - read from content.ts
+- 'use client' only when interactivity is required
+- No any, no as any
+- Semantic HTML - section, nav, footer, h1, h2, p
+- Mobile-first media queries - min-width breakpoints
+- next/image for all images with width + height
+# .cursorrules for go-web (AutoImport GH Landing Page)
+
+## Project
+Next.js 14 App Router, TypeScript (strict), CSS Modules.
+No Tailwind. No class-variance-authority. No shadcn.
+Marketing landing page for AutoImport GH — a Ghana vehicle import platform.
+
+## Architecture — Feature-Sliced Design (marketing variant)
+```
+src/
+  app/                    Next.js App Router
+    layout.tsx            Root layout — fonts, metadata, globals
+    page.tsx              Composes section components top to bottom
+    globals.css           CSS custom properties, reset, base typography
+  components/
+    layout/               Nav, Footer
+    sections/             One file per page section
+    ui/                   Reusable primitives — Button, Badge, SectionLabel
+  lib/
+    content.ts            ALL copy, stats, links — single source of truth
+    constants.ts          Brand colors, breakpoints, animation values
+  public/
+    images/               Placeholder + real images
+```
+
+## Strict Rules
+
+### Content
+- ALL text content (headings, body copy, labels, stats) lives in lib/content.ts
+- NO hardcoded strings in components — always import from content.ts
+- Placeholders are marked with a PLACEHOLDER comment in content.ts
+
+### Styling
+- CSS Modules only — one .module.css per component file
+- CSS custom properties defined in globals.css, used everywhere
+- DM Sans + Syne fonts — loaded via next/font/google
+- Brand primary: #378ADD, dark: #1A1A18 — always use CSS variables
+- Mobile-first media queries — min-width breakpoints
+- NO inline styles except for dynamic values (e.g. animation progress)
+
+### Components
+- Every component is a named export, not default export
+- Props interfaces defined above the component with explicit types
+- No prop drilling beyond 2 levels — use content.ts for static data
+- Section components receive no props — they read from content.ts directly
+- UI primitives (Button, Badge) receive props
+
+### TypeScript
+- strict mode — no any, no as any
+- All content.ts exports are typed with interfaces
+- No non-null assertions unless absolutely necessary
+
+### Performance
+- Images use next/image with explicit width/height
+- Fonts loaded with next/font/google (subset: latin)
+- Sections use IntersectionObserver for scroll animations
+- No client components unless interactivity is required
+- Mark client components with 'use client' only when needed
+
+### SEO
+- Metadata exported from app/layout.tsx
+- Semantic HTML — section, nav, footer, h1, h2, p
+- Alt text on all images (from content.ts)
+- Open Graph tags in layout metadata
+
+### No
+- No useState/useEffect for static content
+- No external UI libraries
+- No Tailwind
+- No class-based components
+- No default exports on components
+- No hardcoded colors in CSS Modules (use var(--color-*))

@@ -1,0 +1,9 @@
+.section { background: linear-gradient(135deg, var(--color-dark) 0%, #0f2238 100%); position: relative; overflow: hidden; padding: var(--section-padding-y) 0; }
+.section::before { content: ''; position: absolute; width: 800px; height: 800px; border-radius: 50%; background: radial-gradient(circle, rgba(55,138,221,0.12) 0%, transparent 70%); top: -200px; right: -200px; }
+.inner { display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap; position: relative; z-index: 1; }
+.title { font-size: clamp(30px, 4vw, 48px); color: var(--color-white); white-space: pre-line; margin-bottom: 16px; }
+.subtitle { color: rgba(255,255,255,0.6); max-width: 500px; }
+.buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+.storeBtn { display: flex; align-items: center; gap: 12px; padding: 14px 22px; background: rgba(255,255,255,0.08); border: 1.5px solid rgba(255,255,255,0.15); border-radius: 14px; text-decoration: none; min-width: 170px; }
+.sub { font-size: 10px; color: rgba(255,255,255,0.5); margin-bottom: 2px; }
+.main { font-size: 16px; font-weight: 700; color: var(--color-white); }

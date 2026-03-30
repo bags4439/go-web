@@ -1,0 +1,15 @@
+.section { background: var(--color-off-white); padding: var(--section-padding-y) 0; }
+.title { font-size: clamp(30px, 4vw, 48px); margin-bottom: 16px; white-space: pre-line; }
+.subtitle { font-size: 17px; color: var(--color-text-secondary); max-width: 560px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; position: relative; }
+.grid::before { content: ''; position: absolute; top: 28px; left: calc(12.5% + 28px); right: calc(12.5% + 28px); height: 2px; background: linear-gradient(90deg, var(--color-primary), rgba(55,138,221,0.2)); }
+.card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: 20px; padding: 28px 24px; z-index: 1; }
+.number { width: 48px; height: 48px; border-radius: 14px; background: var(--color-primary-light); color: var(--color-primary); font-family: var(--font-display); font-size: 20px; display: grid; place-items: center; margin-bottom: 20px; }
+.cardTitle { font-size: 16px; margin-bottom: 8px; }
+.desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+.video { margin-top: 64px; border-radius: 24px; background: linear-gradient(135deg, #0D1B2E, #1a2f4a); aspect-ratio: 16/9; display: grid; place-content: center; text-decoration: none; color: var(--color-white); gap: 10px; }
+.play { width: 72px; height: 72px; border-radius: 50%; background: var(--color-primary); display: grid; place-items: center; margin: 0 auto; }
+.videoCaption { text-align: center; color: rgba(255,255,255,0.7); }
+.videoLabel { text-align: center; font-size: 11px; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+@media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } .grid::before { display: none; } }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
