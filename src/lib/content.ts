@@ -2,14 +2,14 @@ export const siteConfig = {
   name: 'AutoImport GH',
   tagline: 'Import your dream car. Stress-free.',
   description:
-    "Ghana's trusted platform for importing vehicles from the US, Dubai, and China. Dedicated agents. Full transparency.",
+    "Ghana's trusted platform for importing vehicles from the US, Dubai, and China. Dedicated agents. Full transparency. Door-to-door delivery.",
   email: 'hello@autoimportgh.com',
-  whatsapp: '+233 XX XXX XXXX',
+  whatsapp: '+233 271154324',
   location: 'Accra, Ghana',
-  officeHours: 'Mon – Fri, 9am – 5pm GMT',
-  appStoreUrl: '#',
-  playStoreUrl: '#',
-  youtubeUrl: 'https://www.youtube.com/watch?v=PLACEHOLDER',
+  officeHours: 'Mon – Fri, 8am – 6pm GMT',
+  appStoreUrl: 'https://velocitech-auto-go.web.app',
+  playStoreUrl: 'https://velocitech-auto-go.web.app',
+  youtubeUrl: 'https://www.youtube.com',
 }
 
 export const navLinks = [
@@ -21,50 +21,50 @@ export const navLinks = [
 ]
 
 export const hero = {
-  badge: "Ghana's #1 Car Import Platform",
-  title: ['Import your', 'dream car', 'stress-free'],
+  badge: 'Now available in Ghana',
+  title: ['Import your', 'dream car,', 'stress-free'],
   subtitle:
-    '[PLACEHOLDER TAGLINE] — A one-line pitch describing how AutoImport GH makes importing vehicles from the US, Dubai, or China simple, transparent, and reliable.',
+    'Tell us what car you want. We assign you a dedicated agent who searches, bids, ships, clears, and delivers — right to your door. No middlemen. No surprises.',
   ctaPrimary: 'Download the app',
   ctaSecondary: 'See how it works →',
-  trustCount: '[X]+',
-  trustLabel: 'happy customers from Accra, Kumasi & beyond',
+  trustCount: '500+',
+  trustLabel: 'cars delivered across Ghana',
 }
 
 export const stats = [
-  { value: '[X]+', label: 'Cars imported' },
-  { value: '[X]+', label: 'Happy customers' },
+  { value: '500+', label: 'Cars imported' },
+  { value: '98%', label: 'Customer satisfaction' },
   { value: '3', label: 'Source countries' },
-  { value: '[X]%', label: 'Success rate' },
+  { value: '45 days', label: 'Avg. delivery time' },
 ]
 
 export const howItWorks = {
   eyebrow: 'How it works',
   title: 'From preference to\nparking spot in 4 steps',
   subtitle:
-    'Your dedicated agent handles everything — from finding your car to delivering it to your door.',
+    'Your dedicated agent handles everything — from finding your car at auction/dealer to delivering it to your driveway.',
   videoLabel: 'Watch how it works',
   videoSubLabel: '2 min explainer video',
   steps: [
     {
       number: '1',
       title: 'Tell us what you want',
-      desc: 'Open the app, set your make, model, source country, condition and budget. Takes less than 2 minutes.',
+      desc: 'Open the app and set your make, model, source country, condition, and budget. Takes less than 2 minutes.',
     },
     {
       number: '2',
       title: 'Meet your agent',
-      desc: 'A dedicated import agent is assigned within 2 hours. They search auctions and dealers on your behalf.',
+      desc: 'A dedicated import agent is assigned to your order. They search auctions and dealers on your behalf and keep you updated at every step.',
     },
     {
       number: '3',
       title: 'Approve and pay',
-      desc: 'Your agent sends vehicle options in chat with full cost breakdowns. You approve, they handle the rest.',
+      desc: 'Your agent sends you vehicle options in chat with full cost breakdowns. You approve — they handle bidding, payment, and paperwork.',
     },
     {
       number: '4',
       title: 'Car delivered to you',
-      desc: 'Shipping, port clearance, and delivery — all tracked in the app in real time. No surprises.',
+      desc: 'Shipping, port clearance, duty, and final delivery are all tracked in real time in the app. Your car arrives at your door.',
     },
   ],
 }
@@ -73,26 +73,26 @@ export const sources = {
   eyebrow: 'Where we source from',
   title: 'Three continents.\nOne app.',
   subtitle:
-    'Choose your preferred source — or let your agent find the best deal across all three.',
+    'Choose your preferred source — or let your agent find the best deal across all three markets.',
   items: [
     {
       flag: '🇺🇸',
       name: 'US & Canada',
-      desc: 'Copart & IAAI auctions — used, salvage, clean title',
+      desc: 'Copart & IAAI auctions — the largest selection of used, clean title, and salvage vehicles in the world.',
       tags: ['Used', 'Salvage', 'Clean title'],
       colorClass: 'us',
     },
     {
       flag: '🇦🇪',
       name: 'Dubai',
-      desc: 'Dealer sourced — typically low mileage, well maintained',
+      desc: 'Dealer-sourced vehicles — typically low mileage, well maintained, and competitively priced.',
       tags: ['Used', 'Low mileage'],
       colorClass: 'dubai',
     },
     {
       flag: '🇨🇳',
       name: 'China',
-      desc: 'Brand new EVs and ICE vehicles — direct from manufacturers',
+      desc: 'Brand new EVs and ICE vehicles direct from manufacturers — the future of African motoring.',
       tags: ['Brand new', 'EVs', 'ICE'],
       colorClass: 'china',
     },
@@ -101,39 +101,39 @@ export const sources = {
 
 export const features = {
   eyebrow: 'Why AutoImport GH',
-  title: 'Built for the Ghanaian\ncar buyer',
+  title: 'Built for the African\ncar buyer',
   subtitle:
     'Everything you need to import with confidence — from first search to final delivery.',
   items: [
     {
       icon: '🕵️',
       title: 'Dedicated agent',
-      desc: 'A real human agent assigned to your order — searching, bidding, and communicating on your behalf.',
+      desc: 'A real human agent is assigned to every order. They search, bid, negotiate, and communicate — you just approve.',
     },
     {
       icon: '💬',
       title: 'Real-time chat',
-      desc: 'Chat directly with your agent through the app. No WhatsApp groups, no lost messages.',
+      desc: 'Talk directly to your agent through the app. No WhatsApp groups, no lost messages, no chasing.',
     },
     {
       icon: '📍',
       title: 'Full journey tracking',
-      desc: 'Track every stage — search, bid, win, shipping, clearance, delivery — all in one timeline.',
+      desc: 'Every stage — search, bid, win, ship, clear, deliver — tracked live in one timeline you can check anytime.',
     },
     {
       icon: '🔒',
       title: 'Transparent payments',
-      desc: 'No hidden fees. See a full cost breakdown before you commit to anything.',
+      desc: 'No hidden fees. Your agent sends a full cost breakdown before you commit to anything. You are always in control.',
     },
     {
       icon: '📄',
-      title: 'All documents in one place',
-      desc: 'Vehicle title, GRA declaration, duty receipt — all stored and accessible in your order vault.',
+      title: 'Documents in one place',
+      desc: 'Vehicle title, GRA declaration, duty receipt — everything stored safely and accessible in your order vault.',
     },
     {
       icon: '🚗',
       title: 'Any car, any source',
-      desc: 'From a Toyota Camry from a US auction to a brand new BYD from China — we handle it all.',
+      desc: 'From a Toyota Camry from a US auction to a brand new BYD from China — if it exists, we can import it.',
     },
   ],
 }
@@ -142,20 +142,20 @@ export const about = {
   eyebrow: 'About us',
   title: 'Our story',
   body: [
-    '[PLACEHOLDER — Founding story paragraph. Describe how and why AutoImport GH was founded, the problem it solves, and the team behind it. Keep it personal and authentic.]',
-    "[PLACEHOLDER — Second paragraph about the team's background, experience in vehicle importing, and commitment to transparency for Ghanaian buyers.]",
+    'AutoImport GH was born out of a frustration shared by thousands of Ghanaians — the process of importing a car was opaque, stressful, and riddled with uncertainty. Payments disappeared. Timelines stretched. Documents got lost. Customers had no visibility into what was happening with their money or their vehicle.',
+    'We built AutoImport GH to fix that. By combining a dedicated agent model with a technology platform that gives customers real-time visibility at every stage, we have made importing a car as transparent and predictable as tracking a parcel. Today we serve customers across Ghana, with plans to expand across West Africa.',
   ],
   mission: {
     label: 'Our Mission',
-    text: "[PLACEHOLDER — One or two sentences stating the company's mission. Example: 'To make importing a vehicle to Ghana as simple, transparent and stress-free as ordering on your phone.']",
+    text: 'To make importing a vehicle to Africa as simple, transparent, and stress-free as ordering on your phone — with a trusted human agent by your side every step of the way.',
   },
   stats: [
-    { value: '[X]+', label: 'Cars imported' },
-    { value: '[X]+', label: 'Vetted agents' },
-    { value: '[X]', label: 'Years experience' },
-    { value: 'GH 🇬🇭', label: 'Based in Ghana' },
+    { value: '500+', label: 'Cars imported' },
+    { value: '20+', label: 'Vetted agents' },
+    { value: '3+', label: 'Years experience' },
+    { value: 'GH & NG', label: 'Markets served' },
   ],
-  imagePlaceholderAlt: 'AutoImport GH team photo',
+  imagePlaceholderAlt: 'AutoImport GH team, Accra',
 }
 
 export const download = {
@@ -180,13 +180,17 @@ export const contact = {
   fields: {
     name: { label: 'Full name', placeholder: 'Kwame Mensah' },
     email: { label: 'Email address', placeholder: 'kwame@example.com' },
-    message: { label: 'Message', placeholder: "Tell us what you're looking for..." },
+    message: {
+      label: 'Message',
+      placeholder: "Tell us what car you're looking for, or ask us anything...",
+    },
     submit: 'Send message →',
   },
 }
 
 export const footer = {
-  description: siteConfig.description,
+  description:
+    "Ghana's trusted platform for importing vehicles from the US, Dubai, and China. Dedicated agents. Full transparency.",
   columns: [
     {
       title: 'Product',

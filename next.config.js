@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const config = {
+  output: 'export',
   reactStrictMode: true,
   images: {
-    // Add domains here when using real images
-    remotePatterns: [],
+    unoptimized: true,
   },
 }
 

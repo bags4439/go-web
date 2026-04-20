@@ -7,3 +7,4 @@
 .storeBtn { display: flex; align-items: center; gap: 12px; padding: 14px 22px; background: rgba(255,255,255,0.08); border: 1.5px solid rgba(255,255,255,0.15); border-radius: 14px; text-decoration: none; min-width: 170px; }
 .sub { font-size: 10px; color: rgba(255,255,255,0.5); margin-bottom: 2px; }
 .main { font-size: 16px; font-weight: 700; color: var(--color-white); }
+.storeBtnIcon { font-size: 24px; width: 40px; height: 40px; display: grid; place-items: center; background: rgba(255,255,255,0.08); border-radius: 10px; flex-shrink: 0; }
